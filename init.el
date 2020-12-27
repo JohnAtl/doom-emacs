@@ -65,5 +65,13 @@
 (load (concat user-emacs-directory "core/core")
       nil 'nomessage)
 
+;; I added this JTJ
+
+;; See if this will run
+;;(add-hook 'org-mode-hook (lambda ()
+;;                           (define-key org-mode-map (kbd "C-c g") 'org-mac-grab-link)))
+
 ;; And let 'er rip!
 (doom-initialize)
+
+(load (concat user-emacs-directory "my-init"))
